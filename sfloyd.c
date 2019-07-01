@@ -38,11 +38,11 @@ main()
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);                 // get process rank
 
     /* Assign Data ************************************************************/
-    mpz_t RANK;    mpz_init_set_ui(RANK, rank);           // set to a Biginteger
-    mpz_t CORES;   mpz_init_set_ui(CORES, cores - 1);     // set to a Biginteger
-    mpz_t factor;  mpz_init_set_ui(factor, 1);            // set to a Biginteger
-    mpz_t seed;    mpz_init_set_ui(seed, 8);              // set to a Biginteger
-    mpz_t n;       mpz_init_set_ui(n, 0);                 // set to a Biginteger
+    mpz_t RANK;    mpz_init_set_ui(RANK, rank);           // set to a Bignumber
+    mpz_t CORES;   mpz_init_set_ui(CORES, cores - 1);     // set to a Bignumber
+    mpz_t factor;  mpz_init_set_ui(factor, 1);            // set to a Bignumber
+    mpz_t seed;    mpz_init_set_ui(seed, 8);              // set to a Bignumber
+    mpz_t n;       mpz_init_set_ui(n, 0);                 // set to a Bignumber
     int limit = 230;
     char buff[limit];
     int tag = 0;                                          // tag for messages
